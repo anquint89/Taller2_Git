@@ -101,7 +101,7 @@ def description_card():
         id="description-card",
         children=[
             #html.H5("Proyecto 1"),
-            html.H3("Pronóstico de producción energética — Andrés"),
+            html.H3("Pronóstico de demanda energética — Andrés Quintero"),
             html.Div(
                 id="intro",
                 children="Esta herramienta contiene información sobre la demanda energética total en Austria cada hora según lo públicado en ENTSO-E Data Portal. Adicionalmente, permite realizar pronósticos hasta 5 dias en el futuro."
@@ -206,7 +206,7 @@ app.layout = html.Div(
                 html.Div(
                     id="model_graph",
                     children=[
-                        html.B("Demanda energética total en Austria [MW]"),
+                        html.B("Demanda energética total en Austria por hora [MW]"),
                         html.Hr(),
                         dcc.Graph(
                             id="plot_series",  
